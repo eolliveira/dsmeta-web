@@ -1,4 +1,5 @@
 import FormControl from '../FormControl';
+import SalesTable from '../SalesTable';
 import './style.css';
 
 function SalesCard() {
@@ -7,6 +8,7 @@ function SalesCard() {
             <h2 className="dsmeta-sales-title">Vendas</h2>
             <FormControl/>
             <FormControl/>
+            <SalesTable/>
         </div>
     );
 }
