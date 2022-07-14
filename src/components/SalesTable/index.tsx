@@ -1,9 +1,10 @@
-import Sale from '../Sale';
+import NotificationButton from '../NotificationButton';
 
 import './style.css';
 
 function SalesTable() {
     return (
+
         <table className="dsmeta-sales-table">
             <thead>
                 <tr>
@@ -17,8 +18,23 @@ function SalesTable() {
                 </tr>
             </thead>
             <tbody>
-               <Sale/> 
+                <tr>
+                    <td className="show992">#341</td>
+                    <td className="show576">08/07/2022</td>
+                    <td>Anakin</td>
+                    <td className="show992">15</td>
+                    <td className="show992">11</td>
+                    <td>R$ 55300.00</td>
+                    <td>
+                        <div className="dsmeta-red-btn-container">
+                            <div className="dsmeta-red-btn">
+                                <NotificationButton/>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
             </tbody>
+
         </table>
     );
 }
