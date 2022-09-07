@@ -1,5 +1,7 @@
 import { useState } from "react";
 import SalesTable from "../SalesTable";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import "./style.css";
 
 const SalesCard = () => {
@@ -13,10 +15,20 @@ const SalesCard = () => {
     <div className="dsmeta-card">
       <h2 className="dsmeta-sales-title">Vendas</h2>
       <div className="dsmeta-form-control-container">
-      <input type="date" />
+        <DatePicker
+          selected={new Date()}
+          onChange={(date: Date) => {}}
+          className="dsmeta-form-control"
+          dateFormat="dd/MM/yyyy"
+        />
       </div>
       <div className="dsmeta-form-control-container">
-        <input type="date" />
+        <DatePicker
+          selected={new Date()}
+          onChange={(date: Date) => {}}
+          className="dsmeta-form-control"
+          dateFormat="dd/MM/yyyy"
+        />
       </div>
       <SalesTable />
     </div>
