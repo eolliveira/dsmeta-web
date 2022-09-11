@@ -1,1 +1,1 @@
-# service: https://github.com/eolliveira/dsmeta-service
+service: https://github.com/eolliveira/dsmeta-service
